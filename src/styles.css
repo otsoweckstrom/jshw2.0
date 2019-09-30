@@ -1,0 +1,52 @@
+body {
+  font-family: sans-serif;
+  background: purple;
+}
+
+div {
+}
+.messages{
+  margin-bottom: 1em;
+}
+.floatright {
+  float: right;
+}
+
+.board:hover{
+  background-color: violet;
+}
+
+.messages{
+  color: rgb(255, 0, 200);
+}
+
+.button{
+
+}
+
+table,
+th,
+td {
+  font-size: 12px;
+  text-align: center;
+  line-height: 2em;
+  vertical-align: top;
+  margin-bottom: 1em;
+  width: 300px;
+  height: 60px;
+  background: blueviolet;
+  text-align: center;
+  border: 4px solid black;
+}
+
+.cell:hover{
+  background-color: violet;
+}
+
+.floatydiv {
+  display: inline-block;
+}
+
+.halfsize {
+  size: 49%;
+}
