@@ -1,52 +1,9 @@
-body {
-  font-family: sans-serif;
-  background: purple;
-}
-
-div {
-}
-.messages{
-  margin-bottom: 1em;
-}
-.floatright {
-  float: right;
-}
-
-.board:hover{
-  background-color: violet;
-}
-
-.messages{
-  color: rgb(255, 0, 200);
-}
-
-.button{
-
-}
-
-table,
-th,
+tr,
 td {
-  font-size: 12px;
-  text-align: center;
-  line-height: 2em;
-  vertical-align: top;
-  margin-bottom: 1em;
-  width: 300px;
   height: 60px;
-  background: blueviolet;
+  width: 60px;
+  border: 1px solid black;
   text-align: center;
-  border: 4px solid black;
-}
-
-.cell:hover{
-  background-color: violet;
-}
-
-.floatydiv {
-  display: inline-block;
-}
-
-.halfsize {
-  size: 49%;
+  font-family: Helvetica;
+  font-size: 30px;
 }
