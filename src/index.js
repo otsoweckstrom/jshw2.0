@@ -197,8 +197,9 @@ function Board() {
   for (var j = 0; j < 5; j++) {
     var tr = document.createElement("tr");
     for (var i = 0; i < 5; i++) {
-      var td = tr.appendChild(document.createElement("td"));
+      var td = document.createElement("td");
       td.className = "cell";
+      tr.appendChild(td);
       document.getElementById("board").appendChild(tr);
     }
   }
