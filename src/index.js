@@ -194,14 +194,15 @@ function Player2(board) {
 }
 
 function Board() {
-  let board = document.getElementById("board");
-  for (var j = 0; j < 5; j++) {
-    let tr = document.createElement("tr");
-    board.appendChild(tr);
-    for (var i = 0; i < 5; i++) {
-      let td = document.createElement("td");
-      td.className = "cell";
-      tr.appendChild(td);
+  let grid = document.getElementById("board");
+  let n = 5;
+  for (let i = 0; i < n; i++) {
+    let row = document.createElement("tr");
+    grid.appendChild(row);
+    for (let j = 0; j < n; j++) {
+      let col = document.createElement("td");
+      col.className = "cell";
+      row.appendChild(col);
     }
   }
   this.positions = Array.from(document.querySelectorAll(".cell"));
