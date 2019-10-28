@@ -194,14 +194,15 @@ function Player2(board) {
 }
 
 function Board() {
+  let board = document.getElementById("board");
   for (var j = 0; j < 5; j++) {
-    var tr = document.createElement("tr");
+    let tr = document.createElement("tr");
     for (var i = 0; i < 5; i++) {
-      var td = document.createElement("td");
+      let td = document.createElement("td");
       td.className = "cell";
       tr.appendChild(td);
-      document.getElementById("board").appendChild(tr);
     }
+    board.appendChild(tr);
   }
   this.positions = Array.from(document.querySelectorAll(".cell"));
 }
