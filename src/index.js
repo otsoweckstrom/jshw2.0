@@ -197,12 +197,12 @@ function Board() {
   let board = document.getElementById("board");
   for (var j = 0; j < 5; j++) {
     let tr = document.createElement("tr");
+    board.appendChild(tr);
     for (var i = 0; i < 5; i++) {
       let td = document.createElement("td");
       td.className = "cell";
       tr.appendChild(td);
     }
-    board.appendChild(tr);
   }
   this.positions = Array.from(document.querySelectorAll(".cell"));
 }
