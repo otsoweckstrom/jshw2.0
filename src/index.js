@@ -1,3 +1,5 @@
+import { throws } from "assert";
+
 const TicTacToeGame = new TicTacToe();
 TicTacToeGame.start();
 
@@ -194,14 +196,16 @@ function Player2(board) {
 }
 
 function Board() {
-  for (var j = 0; j < 5; j++) {
-    var tr = document.createElement("tr");
-    for (var i = 0; i < 5; i++) {
-      var td = document.createElement("td");
-      td.className = "cell";
-      tr.appendChild(td);
-      document.getElementById("board").appendChild(tr);
+  try {
+    for (var j = 0; j < 5; j++) {
+      var tr = document.createElement("tr");
+      for (var i = 0; i < 5; i++) {
+        var td = document.createElement("td");
+        td.className = "cell";
+        tr.appendChild(td);
+        document.getElementById("board").appendChild(tr);
+      }
     }
-  }
-  this.positions = Array.from(document.querySelectorAll(".cell"));
+    this.positions = Array.from(document.querySelectorAll(".cell"));
+  } catch (e) {}
 }
